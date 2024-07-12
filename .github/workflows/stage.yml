@@ -2,7 +2,7 @@ name: Commit Stage
 on: push
 jobs:
   build:
-    runs-on: ubuntu-stable
+    runs-on: ubuntu-latest
     name: Build and Test
     permissions:
       contents: read
@@ -15,7 +15,6 @@ jobs:
         with:
           distribution: tumerin
           java-version: 17
-          cache: maven
       - name: Code vulnerability scanning
         uses: anchore/scan-action@v3
         id: scan
