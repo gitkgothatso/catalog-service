@@ -13,7 +13,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          distribution: tumerin
+          distribution: temurin
           java-version: 17
       - name: Code vulnerability scanning
         uses: anchore/scan-action@v3
