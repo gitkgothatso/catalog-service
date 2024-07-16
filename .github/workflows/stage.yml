@@ -36,8 +36,6 @@ jobs:
         run: |
           chmod +x mvnw
           ./mvnw install
-
-
   package:
     name: Package and Publish
     if: ${{ github.ref == 'refs/heads/main' }}
